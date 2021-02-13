@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../imagens/favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="operando.css">
+        <script src="operando.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="operando.html">OPERANDO</a></li>
+                    <li><a href="../operandos/operandos.html">OPERANDOS</a></li>
+                    <li><a href="../conversor_de_moedas/conversor_de_moedas.html">CONVERSOR DE MOEDAS</a></li>
+                    <li><a href="../conversor_de_base/conversor_de_base.html">CONVERSOR DE BASE</a></li>
+                    <li><a href="../ajuda/ajuda.html">AJUDA</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="cabeca">
+                <h1>OPERANDO</h1>
+            </div>
+
+            <label class="valor"><h3>DIGITE UM VALOR:</h3></label>
+            <div>
+                <input type="text" class="t" id="valor" onkeyup="verific()"/>
+            </div>
+
+            <form>
+                <dl class="c1">
+                    <dt><input type="radio" class="ra" name="calc" id="f" value="x!" disabled/> X! (Fatorial de X)</dt>
+                    <dt><input type="radio" class="ra" name="calc" id="qd" value="x2" disabled/> X²</dt>
+                    <dt><input type="radio" class="ra" name="calc" id="cub" value="x3" disabled/> X³</dt>
+                </dl>
+                <dl class="c2">
+                    <dt><input type="radio" class="ra" name="calc" id="r" value="rq" disabled/> Raiz Quadrada (X)</dt>
+                    <dt><input type="radio" class="ra" name="calc" id="sen" value="seno" disabled/> Seno (X)</dt>
+                    <dt><input type="radio" class="ra" name="calc" id="div" value="1/x" disabled/> 1/X<br/></dt>
+                </dl>
+            </form>
+
+            <label class="resultado"><h2>RESULTADO:</h2></label>
+            <div class="result">
+                <input type="text" class="t" id="result" readonly/>
+            </div>
+
+            <div class="btn">
+                <input type="button" class="exec" id="exec" value="EXECUTAR" onclick="exec()"/>
+                <input type="button" class="clean" id="clean" value="LIMPAR" onclick="clean()"/>
+            </div>
+            <div class="push"></div>
+                 </div>
+                <footer class="footer"></footer>
+        </div>
+    </body>
+</html>

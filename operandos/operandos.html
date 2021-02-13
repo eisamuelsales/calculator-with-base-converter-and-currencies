@@ -1,0 +1,67 @@
+<!doctype html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../imagens/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="operandos.css">
+        <script src="operandos.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../operando/operando.html">OPERANDO</a></li>
+                    <li><a href="../operandos/operandos.html">OPERANDOS</a></li>
+                    <li><a href="../conversor_de_moedas/conversor_de_moedas.html">CONVERSOR DE MOEDAS</a></li>
+                    <li><a href="../conversor_de_base/conversor_de_base.html">CONVERSOR DE BASE</a></li>
+                    <li><a href="../ajuda/ajuda.html">AJUDA</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+                <div class="cabeca">
+                    <h1>OPERANDOS</h1>
+                </div>
+                <div class="row">
+                    <div>
+                        <label class="valor"><h5>PRIMEIRO VALOR:</h5></label>
+                        <input type="text" class="t" id="valor" onkeyup="verific()"/>
+                    </div>
+        
+                    <form>
+                        <label class="valor"><h5>OPERADOR:</h5></label>
+                        <select id="select" class="s">
+                            <option value=""></option>
+                            <option value="mais">+</option>
+                            <option value="menos">-</option>
+                            <option value="mult">*</option>
+                            <option value="div">/</option>
+                            <option value="resto">mod</option>
+                        </select>
+                    </form>
+
+                    
+                    <div>
+                        <label class="valor"><h5>SEGUNDO VALOR:</h5></label>
+                        <input type="text" class="t" id="valor2" disabled onkeyup="verific()"/>
+                    </div>
+                </div>
+    
+                <label class="resultado"><h2>RESULTADO:</h2></label>
+                <div class="result">
+                    <input type="text" class="t" id="result" readonly/>
+                </div>
+    
+                <div class="btn">
+                    <input type="button" class="exec" id="exec" value="EXECUTAR" onclick="exec()"/>
+                    <input type="button" class="clean" id="clean" value="LIMPAR" onclick="clean()"/>
+                </div>
+                <div class="push"></div>
+                 </div>
+                <footer class="footer"></footer>
+            </div>
+        </body>
+    </html>
+    </body>
+</html>

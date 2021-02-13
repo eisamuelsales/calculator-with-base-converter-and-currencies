@@ -1,0 +1,144 @@
+/* Style menu */
+body {
+    font-family: Arial;
+    size: 12px;
+}
+.nav {
+    background-color: #4f4f4f;
+    overflow: hidden;
+}
+.cabeca{
+    height: 79px;
+    position: relative;
+    display: flow-root;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline;
+    list-style: none;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    background-color: #4f4f4f;
+    border-bottom: 1px solid #4f4f4f;
+    -webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #4f4f4f;
+    padding: 15px 40px;
+    background-color: #fff;
+}
+
+/*Style general*/
+
+body {
+    display: block;
+    position: relative;
+    text-align: center;
+    align-content: center;
+    margin:0;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #000000;
+}
+
+.container {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    margin-top: 70px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 15px 14px #d0cbcb;   
+}
+
+.cabeca {
+    background-color: #4f4f4f;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+}
+
+form {
+    display: inline-flex;
+    position: relative;
+}
+
+.c1 {
+    text-align: left;
+    padding-right: 25px;
+}
+
+.c2 {
+    text-align: start;
+}
+
+#result {
+    background-color: #d0cbcb;
+}
+
+.t {
+    text-align: center;
+    padding: 1em;
+    color: #111;
+    line-height: 1;
+    border: 2px solid  #4f4f4f;
+    border-radius: 3px;
+    width: 90px;
+    height: 0px;
+  }
+
+.t:hover {
+    border: 2px solid #4f4f4f;
+}
+
+.exec {
+    background-color: grey; 
+    color: white; 
+    border: 2px solid #111;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 22px;
+  }
+  
+.exec:hover {
+    background-color: #4f4f4f;
+    color: white;
+}
+
+.clean {
+    background-color: grey; 
+    color: white; 
+    border: 2px solid #111;
+    width: 10vw;
+    height: 5vh;
+    border-radius: 22px;
+  }
+  
+.clean:hover {
+    background-color: #4f4f4f;
+    color: white;
+}
+
+.result {
+    padding-bottom: 15px;
+}
+.footer,
+    .push {
+      height: 50px;
+    }
